@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table no</h1>
+  Table no
+   <input type="number" id="s">
+  End no
+   <input type="number" id="e">
+   <button onclick="f1()">Submit</button> 
+  <script>
+    function f1(){
+      var a=parseInt(document.getElementById('s').value);
+      var b=parseInt(document.getElementById('e').value);
+      for(i=1; i<=b; i++){
+        document.write(a,"*",i,"=",i*a,"<br>");
+      }
+    }
+  </script>
+
+  
+
+</body>
+</html>
+
+
+
+
+

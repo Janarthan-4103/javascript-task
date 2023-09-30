@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  firstname
+   <input type="text" id="fname">
+  lastname
+   <input type="text" id="lname"><br>
+   <button onclick="f()">submit</button><br>
+   <script>
+   function f()
+   {
+    let a=document.getElementById("fname").value;
+    let b=document.getElementById("lname").value;
+    document.write(a+b);
+   
+  }
+  
+   </script>
+
+   firstnumber
+   <input type="number" id="fnumber">
+   secondnumber
+   <input type="number" id="snumber"><br>
+   <button onclick="f()">submit</button><br><br> 
+   <script>
+    function f()
+    {
+      let a=document.getElementById("fnumber").value;
+      let b=document.getElementById("snumber").value;
+      if(a===b)
+        document.write("both are equal");
+      Elseif("a>b")
+        document.write("fnumber is greater");
+      Else
+        document.write("snumber is greater");
+    }
+   </script>
+
+   Age
+   <input type="number" id="vote vaild">
+   <button onclick="fu()">Click</button><br><br>
+   <script>
+    function fu()
+    {
+      let a=document.getElementById("vote vaild").value;
+      
+      if(a>18)
+        document.write(" eligible");
+      else
+        document.write(" not eligible");  
+    }
+   </script>
+
+   Number1
+     <input type="number" id="n1">
+   Nmber2
+     <input type="number" id="n2">
+   <button onclick="fuc()">Submit</button><br><br> 
+   <script>
+    function fuc()
+    {
+      document.write("test")
+      let a=parseInt(document.getElementById("n1").value);
+      let b=parseInt(document.getElementById("n2").value);
+    
+     document.write("Add result:",a+b);
+     document.write("<br>");
+     document.write("Sub result:",a-b);
+     document.write("<br>");
+     document.write("Multi:",a*b);
+       document.write("<br>");
+     document.write("Div:",a/b);
+    }
+   </script> 
+   
+   Enter the number
+   <input type="number" id="n">
+   <button onclick="odd_even()">check</button><br><br>
+   <script>
+    function odd_even()
+{ 
+  
+   let a=parseInt(document.getElementById("n").value);
+  //  document.write(a)
+   if(a%2==0)
+   document.write(a+" Even Number");
+   else
+   document.write(a+"Odd Number");
+   
+}
+    </script>
+
+  <h2>Tot and Avg</h2>
+  Tamil
+  <input type="number" id="t"><br><br>
+  English
+  <input type="number" id="e"><br><br>
+  Maths
+  <input type="number" id="m"><br><br>
+  <button onclick="at()">Submit</button><br><br>
+  <script>
+    function at()
+    {
+      let a=parseInt(document.getElementById('t').value);
+      let b=parseInt(document.getElementById('e').value);
+      let c=parseInt(document.getElementById('m').value);
+      let total,average;
+      total=a+b+c;
+      average=(a+b+c)/3;
+      document.write("total is"+total+"<br>");
+      
+      document.write("average is"+average+"<br>");
+      if(average>=90)
+      {
+        document.write("A Grade");
+      }
+      else if(average>=80)
+      { 
+        document.write("B Grade");
+      }
+      else if(average>=70)
+      {
+        document.write("C Grade");
+      } 
+      else if(average>=60)
+      {
+        document.write("D Grade"); 
+      } 
+      
+      
+    }
+  </script>
+
+  
+  
+   
+
+   <p>Table</p>
+     <script>
+      for(i=4; i<=16; i+=4)
+
+      document.write(i+"<br>");
+     </script>
+
+  <h3>Tables</h3>
+  <script>
+    for(i=1; i<=10; i++)
+
+    document.write("4*",i,"=",i*4,"<br>");
+   </script>
+
+
+  Enter the table
+    <input type="number" id="no">
+    <button onclick="table()">Submit</button><br><br>
+  <script>
+    function table(){
+      let a=parseInt(document.getElementById("no").value);
+      for(i=1; i<=10; i++)
+
+      document.write(a,"*",i,"=",i*a,"<br>");
+    }
+  </script> 
+  
+  
+  <p>Odd or Even</p>
+  Enter no
+    <input type="number" id="oe">
+    <button onclick="f2()">Submit</button><br><br>
+  <script>
+    function f2(){
+      var a=parseInt(document.getElementById('oe').value);
+     document.write("Odd Number"+"<br>");
+      for(i=1; i<=a; i+=2){
+        document.write(i,"<br>")
+      
+      }
+      document.write("Even Number"+"<br>");
+      for(i=2; i<=a; i+=2){
+        document.write(i,"<br>")
+      
+      }
+    }
+  </script> 
+  
+  Find Odd or Even
+  <input type="number" id="find">
+  <button onclick="f3()">Click</button>
+  <script>
+    function f3(){
+      var a=parseInt(document.getElementById("find").value);
+      for(i=1; i<=a; i++)
+      if(i%2==0){
+        document.write(i,"even","<br>");
+      }
+      else
+       {
+        document.write(i,"odd","<br>");
+       }
+      
+    }
+  </script>
+
+  <h1>Star</h1>
+  Star
+  <input type="text" id="st">
+  <button onclick="f4()">Submit</button>
+  <script>
+    function f4(){
+    var a=parseInt(document.getElementById("st").value);
+    for(i=1; i<=a; i++){
+      for(j=i; j>=1; j--){
+
+      document.write("*");
+      }
+       document.write("<br>");
+    }
+  }
+  </script>
+
+  <h1>Orders</h1>
+  Find
+  <input type="number" id="sj">
+  <button onclick="f5()">Submit</button>
+  <script>
+    function f5(){
+      var a=parseInt(document.getElementById("sj").value);
+      document.write("Asc"+"<br>");
+      for(i=1; i<=a; i++){
+        document.write(i,"<br>")
+      
+      }
+      document.write("Des"+"<br>");
+      for(i=a; i>=1; i--){
+        document.write(i,"<br>")
+      
+      }
+    }
+  </script>
+
+  <h1>Reverse</h1>
+  Enter
+  <input type="text" id="re">
+  <button onclick="f6()">Click</button>
+  <script>
+    function f6(){
+      var y=parseInt(document.getElementById("re").value);
+      document.write("Reverse"+"<br>");
+       for(i=y; i>=1; i--){
+        
+        document.write(i,"<br>")
+        
+       }
+    }
+  </script>
+
+<h1>Numbers</h1>
+Number
+<input type="number" id="reverse no">
+<button onclick="f8()">Submit</button>
+<script>
+  function f8(){
+  var a=parseInt(document.getElementById("reverse no").value);
+  
+  for(i=a; i>=1; i--){
+        for(j=i; j>=1; j--){
+        document.write(j)
+        }
+         document.write("<br>");
+      }
+}
+</script>
+
+
+</body>
+</html>
