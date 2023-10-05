@@ -9,7 +9,7 @@
    <input type="text" id="fname">
   lastname
    <input type="text" id="lname"><br>
-   <button onclick="f()">submit</button><br>
+   <button onclick="f()">submit</button><br><br>
    <script>
    function f()
    {
@@ -48,7 +48,7 @@
     {
       let a=document.getElementById("vote vaild").value;
       
-      if(a>18)
+      if(a>17)
         document.write(" eligible");
       else
         document.write(" not eligible");  
@@ -63,16 +63,13 @@
    <script>
     function fuc()
     {
-      document.write("test")
+      
       let a=parseInt(document.getElementById("n1").value);
       let b=parseInt(document.getElementById("n2").value);
     
-     document.write("Add result:",a+b);
-     document.write("<br>");
-     document.write("Sub result:",a-b);
-     document.write("<br>");
-     document.write("Multi:",a*b);
-       document.write("<br>");
+     document.write("Add:",a+b,"<br>");
+     document.write("Sub:",a-b,"<br>");
+     document.write("Multi:",a*b,"<br>");
      document.write("Div:",a/b);
     }
    </script> 
@@ -111,9 +108,9 @@
       let total,average;
       total=a+b+c;
       average=(a+b+c)/3;
-      document.write("total is"+total+"<br>");
+      document.write("total is"+total,"<br>");
       
-      document.write("average is"+average+"<br>");
+      document.write("average is"+average,"<br>");
       if(average>=90)
       {
         document.write("A Grade");
